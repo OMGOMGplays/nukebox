@@ -20,7 +20,7 @@
 							explosive_force = 100.0
 							explosion_delay = 4.0
 							explosion_buildup = "rmine_blip3"
-							explosion_custom_effect = resource:"particles/bombs/fivehundredpounds/explosion_fivehundred.vpcf"
+							explosion_custom_effect = resource:"particles/bombs/fivehundredpounds/explosion_sbomb.vpcf"
 							explosion_custom_sound = "Grenade.Explode"
 						}
 					},
@@ -52,7 +52,7 @@
 						[
 							{
 								from = "blue.vmat"
-								to = "materials/lightblue.vmat"
+								to = "materials/diamond.vmat"
 							},
 							{
 								from = "sboxlogo.vmat"
@@ -75,7 +75,7 @@
 					{
 						_class = "PhysicsHullFromRender"
 						parent_bone = ""
-						surface_prop = "metal"
+						surface_prop = "fivehundredlbbomb"
 						collision_prop = "default"
 						faceMergeAngle = 17.059999
 						maxHullVertices = 38
@@ -119,15 +119,15 @@
 						placement_bone = ""
 						placement_attach = ""
 						is_ragdoll = false
-						collision_group = "default"
+						collision_group = "interactive"
 						offset = [ 0.0, 0.0, 0.0 ]
 						fadetime = 20.0
 						fade_min_dist = 0.0
 						fade_max_dist = 0.0
 						name_mode = "none"
 						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodel.vmdl"
+						is_essential_piece = true
+						model = "models/bombs/sbombgibs/keygibmodelbig.vmdl"
 					},
 					{
 						_class = "BreakPieceExternal"
@@ -135,15 +135,15 @@
 						placement_bone = ""
 						placement_attach = ""
 						is_ragdoll = false
-						collision_group = "default"
+						collision_group = "interactive"
 						offset = [ 0.0, 0.0, 0.0 ]
 						fadetime = 20.0
 						fade_min_dist = 0.0
 						fade_max_dist = 0.0
 						name_mode = "none"
 						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodel.vmdl"
+						is_essential_piece = true
+						model = "models/bombs/sbombgibs/keygibmodelbig.vmdl"
 					},
 					{
 						_class = "BreakPieceExternal"
@@ -151,15 +151,15 @@
 						placement_bone = ""
 						placement_attach = ""
 						is_ragdoll = false
-						collision_group = "default"
+						collision_group = "interactive"
 						offset = [ 0.0, 0.0, 0.0 ]
 						fadetime = 20.0
 						fade_min_dist = 0.0
 						fade_max_dist = 0.0
 						name_mode = "none"
 						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodel.vmdl"
+						is_essential_piece = true
+						model = "models/bombs/sbombgibs/keygibmodelbig.vmdl"
 					},
 					{
 						_class = "BreakPieceExternal"
@@ -167,15 +167,15 @@
 						placement_bone = ""
 						placement_attach = ""
 						is_ragdoll = false
-						collision_group = "default"
+						collision_group = "interactive"
 						offset = [ 0.0, 0.0, 0.0 ]
 						fadetime = 20.0
 						fade_min_dist = 0.0
 						fade_max_dist = 0.0
 						name_mode = "none"
 						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodel.vmdl"
+						is_essential_piece = true
+						model = "models/bombs/sbombgibs/keygibmodelbig.vmdl"
 					},
 					{
 						_class = "BreakPieceExternal"
@@ -183,175 +183,15 @@
 						placement_bone = ""
 						placement_attach = ""
 						is_ragdoll = false
-						collision_group = "default"
+						collision_group = "interactive"
 						offset = [ 0.0, 0.0, 0.0 ]
 						fadetime = 20.0
 						fade_min_dist = 0.0
 						fade_max_dist = 0.0
 						name_mode = "none"
 						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodel.vmdl"
-					},
-					{
-						_class = "BreakPieceExternal"
-						placement_mode = "default"
-						placement_bone = ""
-						placement_attach = ""
-						is_ragdoll = false
-						collision_group = "default"
-						offset = [ 0.0, 0.0, 0.0 ]
-						fadetime = 20.0
-						fade_min_dist = 0.0
-						fade_max_dist = 0.0
-						name_mode = "none"
-						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodel.vmdl"
-					},
-					{
-						_class = "BreakPieceExternal"
-						placement_mode = "default"
-						placement_bone = ""
-						placement_attach = ""
-						is_ragdoll = false
-						collision_group = "default"
-						offset = [ 0.0, 0.0, 0.0 ]
-						fadetime = 20.0
-						fade_min_dist = 0.0
-						fade_max_dist = 0.0
-						name_mode = "none"
-						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodel.vmdl"
-					},
-					{
-						_class = "BreakPieceExternal"
-						placement_mode = "default"
-						placement_bone = ""
-						placement_attach = ""
-						is_ragdoll = false
-						collision_group = "default"
-						offset = [ 0.0, 0.0, 0.0 ]
-						fadetime = 20.0
-						fade_min_dist = 0.0
-						fade_max_dist = 0.0
-						name_mode = "none"
-						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodel.vmdl"
-					},
-					{
-						_class = "BreakPieceExternal"
-						placement_mode = "default"
-						placement_bone = ""
-						placement_attach = ""
-						is_ragdoll = false
-						collision_group = "default"
-						offset = [ 0.0, 0.0, 0.0 ]
-						fadetime = 20.0
-						fade_min_dist = 0.0
-						fade_max_dist = 0.0
-						name_mode = "none"
-						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodel.vmdl"
-					},
-					{
-						_class = "BreakPieceExternal"
-						placement_mode = "default"
-						placement_bone = ""
-						placement_attach = ""
-						is_ragdoll = false
-						collision_group = "default"
-						offset = [ 0.0, 0.0, 0.0 ]
-						fadetime = 20.0
-						fade_min_dist = 0.0
-						fade_max_dist = 0.0
-						name_mode = "none"
-						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodel.vmdl"
-					},
-					{
-						_class = "BreakPieceExternal"
-						placement_mode = "default"
-						placement_bone = ""
-						placement_attach = ""
-						is_ragdoll = false
-						collision_group = "default"
-						offset = [ 0.0, 0.0, 0.0 ]
-						fadetime = 20.0
-						fade_min_dist = 0.0
-						fade_max_dist = 0.0
-						name_mode = "none"
-						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodelbig.vmdl"
-					},
-					{
-						_class = "BreakPieceExternal"
-						placement_mode = "default"
-						placement_bone = ""
-						placement_attach = ""
-						is_ragdoll = false
-						collision_group = "default"
-						offset = [ 0.0, 0.0, 0.0 ]
-						fadetime = 20.0
-						fade_min_dist = 0.0
-						fade_max_dist = 0.0
-						name_mode = "none"
-						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodelbig.vmdl"
-					},
-					{
-						_class = "BreakPieceExternal"
-						placement_mode = "default"
-						placement_bone = ""
-						placement_attach = ""
-						is_ragdoll = false
-						collision_group = "default"
-						offset = [ 0.0, 0.0, 0.0 ]
-						fadetime = 20.0
-						fade_min_dist = 0.0
-						fade_max_dist = 0.0
-						name_mode = "none"
-						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodelbig.vmdl"
-					},
-					{
-						_class = "BreakPieceExternal"
-						placement_mode = "default"
-						placement_bone = ""
-						placement_attach = ""
-						is_ragdoll = false
-						collision_group = "default"
-						offset = [ 0.0, 0.0, 0.0 ]
-						fadetime = 20.0
-						fade_min_dist = 0.0
-						fade_max_dist = 0.0
-						name_mode = "none"
-						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodelbig.vmdl"
-					},
-					{
-						_class = "BreakPieceExternal"
-						placement_mode = "default"
-						placement_bone = ""
-						placement_attach = ""
-						is_ragdoll = false
-						collision_group = "default"
-						offset = [ 0.0, 0.0, 0.0 ]
-						fadetime = 20.0
-						fade_min_dist = 0.0
-						fade_max_dist = 0.0
-						name_mode = "none"
-						random_spawn_chance = 1.0
-						is_essential_piece = false
-						model = "models/bombs/sbombgibs/keymodelbig.vmdl"
+						is_essential_piece = true
+						model = "models/bombs/sbombgibs/keygibmodelbig.vmdl"
 					},
 				]
 			},

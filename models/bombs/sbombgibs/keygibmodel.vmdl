@@ -59,7 +59,7 @@
 						[
 							{
 								from = "cylinder.vmat"
-								to = "materials/yellow.vmat"
+								to = "materials/gold.vmat"
 							},
 							{
 								from = "path 0.vmat"
@@ -78,7 +78,7 @@
 					{
 						_class = "PhysicsHullFromRender"
 						parent_bone = ""
-						surface_prop = "keysounds"
+						surface_prop = "metal"
 						collision_prop = "default"
 						faceMergeAngle = 20.0
 						maxHullVertices = 32
