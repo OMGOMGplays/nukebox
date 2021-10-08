@@ -1,7 +1,7 @@
 using Sandbox;
 
 [Library("bombs_500lbbomb", Title = "500lb Bomb", Spawnable = true)]
-public partial class FivehundredlbBomb : BombProp
+public partial class FHlbBomb : BombProp
 {
     int takenDamage;
 
@@ -30,16 +30,16 @@ public partial class FivehundredlbBomb : BombProp
 
 	protected override void OnPhysicsCollision( CollisionEventData eventData )
 	{
-		if ( eventData.Speed >= 500.0f && takenDamage > 1 )
-		{
-			ExplodeAsync(0.25f);
-		}
-        
-        else if (eventData.Speed >= 500.0f && takenDamage < 1) 
+        if (eventData.Speed >= 500.0f && takenDamage < 1) 
         {
             PlaySound("rmine_blip3");
             takenDamage++;
         }
+
+		else if ( eventData.Speed >= 500.0f && takenDamage >= 1)
+		{
+			ExplodeAsync(0.25f);
+		}
 	}
 
     public override void OnKilled() 

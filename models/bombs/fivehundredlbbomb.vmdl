@@ -37,13 +37,13 @@
 						game_keys = 
 						{
 							explosion_type = "shrapnel"
-							explosive_damage = 75.0
-							explosive_radius = 1000.0
-							explosive_force = 50.0
+							explosive_damage = 250.0
+							explosive_radius = 2500.0
+							explosive_force = 100.0
 							explosion_delay = 4.0
 							explosion_buildup = "rmine_blip3"
-							explosion_custom_effect = resource:""
-							explosion_custom_sound = "BaseExplosionEffect.Sound"
+							explosion_custom_effect = resource:"particles/bombs/fivehundredpounds/explosion_fivehundred.vpcf"
+							explosion_custom_sound = "fivehundred_explosion"
 						}
 					},
 					{

@@ -301,7 +301,7 @@
 ]
 
 //
-// FivehundredlbBomb
+// FHlbBomb
 //
 @PointClass base(BaseProperties_nukebox) model() = bombs_500lbbomb : ""
 [
