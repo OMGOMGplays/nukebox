@@ -1090,15 +1090,11 @@
 				}
 			}
 		},
-		{
-			_class = "C_OP_RenderSound"
-			m_pszSoundName = "ex2_therm"
-		},
 	]
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_fivehundred_smoke_shockwaveouter.vpcf"
+			m_ChildRef = resource:"particles/bombs/thermobaric/explosion_thermobaric_smoke_shockwaveouter.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/bombs/thermobaric/explosion_thermobaric_fireup.vpcf"
