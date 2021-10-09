@@ -305,7 +305,7 @@
 			m_LocalCoordinateSystemSpeedMin = 
 			{
 				m_nType = "PVEC_TYPE_LITERAL"
-				m_vLiteralValue = [ -1900.0, -2000.0, -150.0 ]
+				m_vLiteralValue = [ -3700.0, -4200.0, -150.0 ]
 				m_LiteralColor = [ 0, 0, 0, 0 ]
 				m_nVectorAttribute = 6
 				m_vVectorAttributeScale = [ 1.0, 1.0, 1.0 ]
@@ -505,7 +505,7 @@
 			m_LocalCoordinateSystemSpeedMax = 
 			{
 				m_nType = "PVEC_TYPE_LITERAL"
-				m_vLiteralValue = [ 2400.0, 2700.0, 2500.0 ]
+				m_vLiteralValue = [ 4000.0, 4500.0, 4000.0 ]
 				m_LiteralColor = [ 0, 0, 0, 0 ]
 				m_nVectorAttribute = 6
 				m_vVectorAttributeScale = [ 1.0, 1.0, 1.0 ]
@@ -713,7 +713,7 @@
 	[
 		{
 			_class = "C_OP_BasicMovement"
-			m_Gravity = [ 0.0, 0.0, -250.0 ]
+			m_Gravity = [ 0.0, 0.0, -800.0 ]
 			m_fDrag = 0.1
 		},
 		{
@@ -846,7 +846,7 @@
 			{
 				m_nType = "PVEC_TYPE_LITERAL_COLOR"
 				m_vLiteralValue = [ 0.0, 0.0, 0.0 ]
-				m_LiteralColor = [ 126, 95, 75, 255 ]
+				m_LiteralColor = [ 255, 255, 255, 255 ]
 				m_nVectorAttribute = 6
 				m_vVectorAttributeScale = [ 1.0, 1.0, 1.0 ]
 				m_nControlPoint = 0
@@ -1043,6 +1043,7 @@
 				}
 			}
 			m_hTexture = resource:"materials/particles/lights/spotlight_single.vtex"
+			m_flMinLength = 50.0
 		},
 	]
 }
