@@ -1,7 +1,7 @@
 using Sandbox;
 
 [Library("bombs_1000lbbomb", Title = "1000lb Bomb", Spawnable = true)]
-public partial class TlbBomb : BombProp
+public partial class TlbBomb : BombProp, IUse
 {
     int takenDamage;
 
@@ -26,6 +26,22 @@ public partial class TlbBomb : BombProp
         {
             ExplodeAsync(0.25f);
         }
+    }
+
+	public bool IsUsable( Entity user )
+	{
+		return true;
+	}
+
+    public bool OnUse(Entity user) 
+    {
+        if (user is Player player && takenDamage < 1)
+        {
+            takenDamage++;
+            PlaySound("rmine_blip3");
+        }
+
+        return false;
     }
 
 	protected override void OnPhysicsCollision( CollisionEventData eventData )

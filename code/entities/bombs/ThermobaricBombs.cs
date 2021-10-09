@@ -1,7 +1,7 @@
 using Sandbox;
 
 [Library("bombs_thermobomb", Title = "Thermobaric Bomb", Spawnable = true)]
-public partial class ThermoBomb : BombProp
+public partial class ThermoBomb : BombProp, IUse
 {
     int takenDamage;
 
@@ -26,6 +26,22 @@ public partial class ThermoBomb : BombProp
         {
             ExplodeAsync(0.25f);
         }
+    }
+
+	public bool IsUsable( Entity user )
+	{
+		return true;
+	}
+
+    public bool OnUse(Entity user) 
+    {
+        if (user is Player player && takenDamage < 1)
+        {
+            takenDamage++;
+            PlaySound("rmine_blip3");
+        }
+
+        return false;
     }
 
 	protected override void OnPhysicsCollision( CollisionEventData eventData )
