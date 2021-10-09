@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "+bLXcGW4YLaT1p4NcrPsBOIK6BpudaGbLY/7STod45lNn/A/aNtHK3FrHrGl8kHrvz/gmArFBP/WOXLJGCmtKA==",
+  "success": false,
+  "projectFilePath": "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\nukebox\\code\\nukebox.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\Addons\\base\\code\\base.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\Addons\\base\\code\\base.csproj",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}
