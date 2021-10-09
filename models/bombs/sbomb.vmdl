@@ -20,7 +20,7 @@
 							explosive_force = 100.0
 							explosion_delay = 4.0
 							explosion_buildup = "rmine_blip3"
-							explosion_custom_effect = resource:"particles/bombs/fivehundredpounds/explosion_sbomb.vpcf"
+							explosion_custom_effect = resource:"particles/bombs/sbomb/explosion_sbomb.vpcf"
 							explosion_custom_sound = "Grenade.Explode"
 						}
 					},
