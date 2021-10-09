@@ -67,7 +67,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = ""
-						surface_prop = "default"
+						surface_prop = "bombs"
 						collision_prop = "default"
 						radius = 20.556681
 						point0 = [ 1.12711, -15.736822, 0.325986 ]
@@ -76,7 +76,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = ""
-						surface_prop = "default"
+						surface_prop = "bombs"
 						collision_prop = "default"
 						radius = 7.340067
 						point0 = [ -0.690838, 42.952477, 0.325986 ]
@@ -85,7 +85,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = ""
-						surface_prop = "default"
+						surface_prop = "bombs"
 						collision_prop = "default"
 						radius = 13.426904
 						point0 = [ -0.690838, -40.916943, 0.325986 ]
@@ -94,7 +94,7 @@
 					{
 						_class = "PhysicsShapeBox"
 						parent_bone = ""
-						surface_prop = "default"
+						surface_prop = "bombs"
 						collision_prop = "default"
 						origin = [ -0.301435, -58.43845, 0.034447 ]
 						angles = [ 0.0, 0.0, 0.0 ]

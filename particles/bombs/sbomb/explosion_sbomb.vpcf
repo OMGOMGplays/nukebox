@@ -1100,7 +1100,7 @@
 			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_fivehundred_fireup.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_sbomb_test.vpcf"
+			m_ChildRef = resource:"particles/bombs/sbomb/explosion_sbomb_test.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_fivehundred_smoke_center.vpcf"
@@ -1112,10 +1112,10 @@
 			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_fivehundred_debris.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_sbomb_test2.vpcf"
+			m_ChildRef = resource:"particles/bombs/sbomb/explosion_sbomb_test2.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_sbomb_test3.vpcf"
+			m_ChildRef = resource:"particles/bombs/sbomb/explosion_sbomb_test3.vpcf"
 		},
 	]
 }
