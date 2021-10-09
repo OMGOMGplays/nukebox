@@ -956,7 +956,7 @@
 			m_ModelList = 
 			[
 				{
-					m_model = resource:"models/bombs/sbombgibs/keyparticlemodel.vmdl"
+					m_model = resource:"models/bombs/sbombkeys/keyparticlemodel.vmdl"
 				},
 			]
 		},
