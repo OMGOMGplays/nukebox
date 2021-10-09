@@ -15,8 +15,8 @@
 						game_keys = 
 						{
 							explosion_type = "shrapnel"
-							explosive_damage = 500.0
-							explosive_radius = 5000.0
+							explosive_damage = 300.0
+							explosive_radius = 3000.0
 							explosive_force = 100.0
 							explosion_delay = 4.0
 							explosion_buildup = "rmine_blip3"
