@@ -1094,7 +1094,7 @@
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_fivehundred_smoke_shockwave.vpcf"
+			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_fivehundred_smoke_shockwaveouter.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_fivehundred_fireup.vpcf"

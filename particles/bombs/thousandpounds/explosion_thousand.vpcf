@@ -1139,7 +1139,7 @@
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/bombs/thousandpounds/explosion_thousand_shockwave.vpcf"
+			m_ChildRef = resource:"particles/bombs/thousandpounds/explosion_thousand_shockwaveouter.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/bombs/thousandpounds/explosion_fthousand_fireup.vpcf"
@@ -1154,7 +1154,7 @@
 			m_ChildRef = resource:"particles/bombs/thousandpounds/explosion_thousand_smoke_spreadbelow.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/bombs/fivehundredpounds/explosion_fivehundred_debris.vpcf"
+			m_ChildRef = resource:"particles/bombs/thousandpounds/explosion_thousand_debris.vpcf"
 		},
 	]
 }

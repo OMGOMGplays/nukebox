@@ -1043,7 +1043,7 @@
 				}
 			}
 			m_hTexture = resource:"materials/particles/lights/spotlight_single.vtex"
-			m_flMinLength = 100.0
+			m_flMinLength = 50.0
 		},
 	]
 }
