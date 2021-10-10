@@ -32,7 +32,7 @@
 						{
 							explosion_type = "shrapnel"
 							explosive_damage = 450.0
-							explosive_radius = 2000.0
+							explosive_radius = 500.0
 							explosive_force = 500.0
 							explosion_delay = -1.0
 							explosion_buildup = "rmine_blip3"
