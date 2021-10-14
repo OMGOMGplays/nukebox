@@ -839,7 +839,7 @@
 	[
 		{
 			_class = "C_OP_RenderSprites"
-			m_hTexture = resource:"materials/particles/smoke1/smoke1.vtex"
+			m_hTexture = resource:"materials/particles/smoke/render/smokeburst_c_slate.vtex"
 		},
 	]
 }
