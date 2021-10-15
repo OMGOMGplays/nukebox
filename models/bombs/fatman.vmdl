@@ -37,7 +37,7 @@
 							explosion_delay = 4.0
 							explosion_buildup = "rmine_blip3"
 							explosion_custom_effect = resource:"particles/bombs/thousandpounds/explosion_thousand.vpcf"
-							explosion_custom_sound = "thousand_explosion"
+							explosion_custom_sound = "atombomb_explosion"
 						}
 					},
 				]
