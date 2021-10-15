@@ -1144,10 +1144,10 @@
 			m_ChildRef = resource:"particles/bombs/atombomb/explosion_atom_smoke_center.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/bombs/thousandpounds/explosion_thousand_smoke_spreadbelow.vpcf"
+			m_ChildRef = resource:"particles/bombs/atombomb/explosion_atom_smoke_spreadbelow.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/bombs/thousandpounds/explosion_thousand_debris.vpcf"
+			m_ChildRef = resource:"particles/bombs/atombomb/explosion_atom_debris.vpcf"
 		},
 	]
 }
