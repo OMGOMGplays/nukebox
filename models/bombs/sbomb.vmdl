@@ -21,7 +21,7 @@
 							explosion_delay = 4.0
 							explosion_buildup = "rmine_blip3"
 							explosion_custom_effect = resource:"particles/bombs/sbomb/explosion_sbomb.vpcf"
-							explosion_custom_sound = "Grenade.Explode"
+							explosion_custom_sound = "fivehundred_explosion"
 						}
 					},
 					{
