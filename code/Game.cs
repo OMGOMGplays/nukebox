@@ -1,6 +1,5 @@
 ﻿using Sandbox;
 
-[Library( "nuke&box", Title = "Nuke&Box" )]
 partial class NukeBox : Game
 {
 	public NukeBox()
