@@ -24,10 +24,7 @@ public partial class Bombs : Panel
 			var btn = cell.Add.Button( entry.Title );
 			btn.AddClass( "icon" );
 			btn.AddEventListener( "onclick", () => ConsoleSystem.Run( "spawn_entity", entry.Name ) );
-			btn.Style.Background = new PanelBackground
-			{
-				Texture = Texture.Load( path, false )
-			};
+			btn.Style.BackgroundImage = Texture.Load( $"/entity/{entry.Name}.png", false );
 		};
 
 		LoadAllItem( false );
