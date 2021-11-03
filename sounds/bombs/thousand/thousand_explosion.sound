@@ -7,7 +7,7 @@
 		VolumeRandom = 0.0
 		Pitch = 1.0
 		PitchRandom = 0.0
-		DistanceMax = 8000.0
+		DistanceMax = 16000.0
 		Sounds = 
 		[
 			"sounds/bombs/thousand/ex1.vsnd",
