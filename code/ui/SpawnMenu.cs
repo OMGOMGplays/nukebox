@@ -1,4 +1,4 @@
-﻿
+
 using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
@@ -11,6 +11,7 @@ public partial class SpawnMenu : Panel
 {
 	public static SpawnMenu Instance;
 	readonly Panel toollist;
+	readonly Panel shooterlist;
 
 	public SpawnMenu()
 	{
@@ -43,6 +44,7 @@ public partial class SpawnMenu : Panel
 			{
 				tabs.Add.Button( "Tools" ).AddClass( "active" );
 				tabs.Add.Button( "Utility" );
+			
 			}
 			var body = right.Add.Panel( "body" );
 			{
@@ -50,7 +52,8 @@ public partial class SpawnMenu : Panel
 				{
 					RebuildToolList();
 				}
-				body.Add.Panel( "inspector" );
+
+				body.Add.Panel("inspector");
 			}
 		}
 

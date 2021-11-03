@@ -14,7 +14,6 @@
 						game_class = "prop_data"
 						game_keys = 
 						{
-							base = ""
 							allowstatic = false
 							bakelighting = true
 							spawn_motion_disabled = false
@@ -30,13 +29,10 @@
 						game_class = "explosion_behavior"
 						game_keys = 
 						{
-							explosion_type = "shrapnel"
 							explosive_damage = 450.0
 							explosive_radius = 3500.0
 							explosive_force = 350.0
-							explosion_delay = 4.0
-							explosion_buildup = "rmine_blip3"
-							explosion_custom_effect = resource:"particles/bombs/atombomb/explosion_atom.vpcf"
+							explosion_custom_effect = resource:"particles/bombs/fatman/explosion_fatman.vpcf"
 							explosion_custom_sound = "atombomb_explosion"
 						}
 					},

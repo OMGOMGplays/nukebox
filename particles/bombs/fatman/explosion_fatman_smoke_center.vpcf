@@ -16,7 +16,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 0.05
+				m_flLiteralValue = 0.15
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -61,7 +61,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 800.0
+				m_flLiteralValue = 200.0
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -305,7 +305,7 @@
 			m_LocalCoordinateSystemSpeedMin = 
 			{
 				m_nType = "PVEC_TYPE_LITERAL"
-				m_vLiteralValue = [ -12000.0, -15600.0, -120.0 ]
+				m_vLiteralValue = [ -2000.0, -3000.0, -150.0 ]
 				m_LiteralColor = [ 0, 0, 0, 0 ]
 				m_nVectorAttribute = 6
 				m_vVectorAttributeScale = [ 1.0, 1.0, 1.0 ]
@@ -505,7 +505,7 @@
 			m_LocalCoordinateSystemSpeedMax = 
 			{
 				m_nType = "PVEC_TYPE_LITERAL"
-				m_vLiteralValue = [ 10000.0, 13000.0, 8000.0 ]
+				m_vLiteralValue = [ 2000.0, 3000.0, 8000.0 ]
 				m_LiteralColor = [ 0, 0, 0, 0 ]
 				m_nVectorAttribute = 6
 				m_vVectorAttributeScale = [ 1.0, 1.0, 1.0 ]
@@ -839,7 +839,7 @@
 	[
 		{
 			_class = "C_OP_RenderSprites"
-			m_hTexture = resource:"materials/particles/simulated/smoke/maya_wispy/wispy_small.vtex"
+			m_hTexture = resource:"materials/particles/smoke/render/smokeburst_c_slate.vtex"
 		},
 	]
 }
