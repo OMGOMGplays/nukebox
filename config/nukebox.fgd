@@ -492,6 +492,16 @@
 ]
 
 //
+// Hands
+//
+@PointClass base(BaseProperties_nukebox) = weapon_hands : ""
+[
+	enable_shadows(boolean) { group = "Rendering" } : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+
+	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
+]
+
+//
 // Fists
 //
 @PointClass base(BaseProperties_nukebox) = weapon_fists : ""
