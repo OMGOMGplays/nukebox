@@ -19,21 +19,11 @@ public partial class Bombs : Panel
 		Canvas.OnCreateCell = ( cell, data ) =>
 		{
 			var entry = (LibraryAttribute)data;
-			var path = $"/entity/{entry.Name}.png";
-
 			var btn = cell.Add.Button( entry.Title );
 			btn.AddClass( "icon" );
 			btn.AddEventListener( "onclick", () => ConsoleSystem.Run( "spawn_entity", entry.Name ) );
 			btn.Style.BackgroundImage = Texture.Load( $"/entity/{entry.Name}.png", false );
 		};
-
-		LoadAllItem( false );
-	}
-
-	private void LoadAllItem( bool isreload )
-	{
-		if ( isreload )
-			Canvas.Data.Clear();
 
 		var bombs = Library.GetAllAttributes<BombProp>().Where( x => x.Spawnable ).OrderBy( x => x.Title ).ToArray();
 
@@ -41,12 +31,5 @@ public partial class Bombs : Panel
 		{
 			Canvas.AddItem( entry );
 		}
-	}
-
-	public override void OnHotloaded()
-	{
-		base.OnHotloaded();
-
-		LoadAllItem( true );
 	}
 }

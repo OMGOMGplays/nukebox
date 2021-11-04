@@ -1147,7 +1147,7 @@
 			m_ChildRef = resource:"particles/bombs/tsarbomb/explosion_tsar_smoke_spreadbelow.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/bombs/atombomb/explosion_atom_debris.vpcf"
+			m_ChildRef = resource:"particles/bombs/tsarbomb/explosion_tsar_debris.vpcf"
 		},
 	]
 }
