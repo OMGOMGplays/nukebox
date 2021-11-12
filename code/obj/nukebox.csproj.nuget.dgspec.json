@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\nukebox\\code\\nukebox.csproj": {}
+    "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\nukebox\\code\\nukebox.csproj": {}
   },
   "projects": {
-    "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\base\\code\\base.csproj": {
+    "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\base\\code\\base.csproj",
+        "projectUniqueName": "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj",
         "projectName": "base",
-        "projectPath": "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\base\\code\\base.csproj",
+        "projectPath": "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj",
         "packagesPath": "C:\\Users\\mancu\\.nuget\\packages\\",
-        "outputPath": "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\base\\code\\obj\\",
+        "outputPath": "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\base\\code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,18 +58,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\nukebox\\code\\nukebox.csproj": {
+    "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\nukebox\\code\\nukebox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\nukebox\\code\\nukebox.csproj",
+        "projectUniqueName": "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\nukebox\\code\\nukebox.csproj",
         "projectName": "nukebox",
-        "projectPath": "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\nukebox\\code\\nukebox.csproj",
+        "projectPath": "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\nukebox\\code\\nukebox.csproj",
         "packagesPath": "C:\\Users\\mancu\\.nuget\\packages\\",
-        "outputPath": "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\nukebox\\code\\obj\\",
+        "outputPath": "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\nukebox\\code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,8 +90,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\base\\code\\base.csproj": {
-                "projectPath": "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\base\\code\\base.csproj"
+              "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj": {
+                "projectPath": "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj"
               }
             }
           }
@@ -120,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
         }
       }
     }

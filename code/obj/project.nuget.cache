@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wX5YYU4joVp1Rh/QPx7QJEBRCWmiyvERWWPY9RKhCI0EsEeX9y0L4C2DZku4RDJsSIog7E2mz5NgobY9cdrJBg==",
+  "dgSpecHash": "cxneg0eWGkDPu2GlVPINIFkWxehx7v9qsY+3U0fG50rDFClwjx3Njq2pzpf1eQKhTT7NCOM7DieoNVgEY4aALw==",
   "success": true,
-  "projectFilePath": "D:\\SteamGames\\steamapps\\common\\sbox\\Addons\\nukebox\\code\\nukebox.csproj",
+  "projectFilePath": "D:\\SteamGames\\steamapps\\common\\sbox\\addons\\nukebox\\code\\nukebox.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
