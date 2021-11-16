@@ -16,9 +16,9 @@
 						{
 							explosion_custom_sound = "atombomb_explosion"
 							explosion_custom_effect = resource:"particles/bombs/tsarbomb/explosion_tsar.vpcf"
-							explosive_damage = 1000.0
+							explosive_damage = 75000.0
 							explosive_radius = 50000.0
-							explosive_force = 1000.0
+							explosive_force = 75000.0
 						}
 					},
 					{

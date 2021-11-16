@@ -9,7 +9,7 @@ public partial class TsarProtomba : BombProp, IUse
     {
         base.Spawn();
 
-        SetModel("models/bombs/tsarbomba.vmdl");
+        SetModel("models/bombs/tsarprotomba.vmdl");
 
         takenDamage = 0;
     }
