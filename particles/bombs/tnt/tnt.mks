@@ -1,16 +1,10 @@
 sequence 0
+loop
 frame tnt/generic_0.png 1
-sequence 1
 frame tnt/generic_1.png 1
-sequence 2
 frame tnt/generic_2.png 1
-sequence 3
 frame tnt/generic_3.png 1
-sequence 4
 frame tnt/generic_4.png 1
-sequence 5
 frame tnt/generic_5.png 1
-sequence 6
 frame tnt/generic_6.png 1
-sequence 7
 frame tnt/generic_7.png 1
