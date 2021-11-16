@@ -36,7 +36,7 @@ Layer0
 	TextureNormal "materials/bombs/tsarbomba/tsar_normal.png"
 
 	//---- Roughness ----
-	TextureRoughness "materials/bombs/tsarbomba/tsar_metallicsmoothness.png"
+	TextureRoughness "materials/bombs/tsarprotomba/tsarprotomba_metallicsmoothness.png"
 
 	//---- Self Illum ----
 	g_flSelfIllumAlbedoFactor "1.000"
