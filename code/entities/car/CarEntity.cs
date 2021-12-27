@@ -1,7 +1,7 @@
 ﻿using Sandbox;
 using System;
 
-[Library( "ent_car", Title = "Car", Spawnable = true )]
+[Library( "vehicle_car", Title = "Car", Spawnable = true )]
 public partial class CarEntity : Prop, IUse
 {
 	[ConVar.Replicated( "debug_car" )]
@@ -463,6 +463,8 @@ public partial class CarEntity : Prop, IUse
 		player.VehicleCamera = null;
 		player.Parent = null;
 
+		player.MainCamera = new FirstPersonCamera();
+
 		if ( player.PhysicsBody.IsValid() )
 		{
 			player.PhysicsBody.Enabled = true;
@@ -487,7 +489,7 @@ public partial class CarEntity : Prop, IUse
 			driver = player;
 		}
 
-		return false;
+		return true;
 	}
 
 	public bool IsUsable( Entity user )
@@ -522,7 +524,7 @@ public partial class CarEntity : Prop, IUse
 				Entity = player,
 				Pos = player.Position + Vector3.Up * 50,
 				Velocity = velocity,
-				PreVelocity = velocity,
+				PreVelocity = velocity * 20.0f, // I don't know why the ragdolls now need more force
 				PostVelocity = velocity,
 				PreAngularVelocity = angularVelocity,
 				Speed = speed,
