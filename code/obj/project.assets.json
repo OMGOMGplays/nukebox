@@ -17,8 +17,8 @@
   "libraries": {
     "base/1.0.0": {
       "type": "project",
-      "path": "../../base/code/base.csproj",
-      "msbuildProject": "../../base/code/base.csproj"
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj",
+      "msbuildProject": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -27,19 +27,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\donov\\.nuget\\packages\\": {}
+    "C:\\Users\\Ian\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\addons\\nukebox\\code\\nukebox.csproj",
+      "projectUniqueName": "D:\\Steam\\steamapps\\common\\sbox\\addons\\nukebox\\code\\nukebox.csproj",
       "projectName": "nukebox",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\addons\\nukebox\\code\\nukebox.csproj",
-      "packagesPath": "C:\\Users\\donov\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\addons\\nukebox\\code\\obj\\",
+      "projectPath": "D:\\Steam\\steamapps\\common\\sbox\\addons\\nukebox\\code\\nukebox.csproj",
+      "packagesPath": "C:\\Users\\Ian\\.nuget\\packages\\",
+      "outputPath": "D:\\Steam\\steamapps\\common\\sbox\\addons\\nukebox\\code\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\donov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -83,7 +88,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
