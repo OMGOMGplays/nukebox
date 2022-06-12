@@ -1,8 +1,8 @@
 {
   "Title": "Nukebox",
   "Type": "game",
-  "Org": "local",
-  "Ident": "nukebox",
+  "Org": "nukebox",
+  "Ident": "nb",
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
@@ -11,7 +11,7 @@
   "CodePath": "code",
   "RootNamespace": "Nukebox",
   "Metadata": {
-    "MaxPlayers": 0,
+    "MaxPlayers": 32,
     "MinPlayers": 0,
     "GameNetworkType": 0,
     "MapSelect": 0,
