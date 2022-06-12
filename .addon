@@ -1,4 +1,25 @@
 {
-	"sharedassets": "*.*",
-	"type": "game"
+  "Title": "Nukebox",
+  "Type": "game",
+  "Org": "local",
+  "Ident": "nukebox",
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "ResourcePaths": null,
+  "HasCode": true,
+  "CodePath": "code",
+  "RootNamespace": "Nukebox",
+  "Metadata": {
+    "MaxPlayers": 0,
+    "MinPlayers": 0,
+    "GameNetworkType": 0,
+    "MapSelect": 0,
+    "MapList": [
+      "facepunch.construct"
+    ],
+    "RankType": 0,
+    "PerMapRanking": false,
+    "LeaderboardType": 0
+  }
 }

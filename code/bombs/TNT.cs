@@ -1,6 +1,10 @@
 using Sandbox;
+using BombProp = Nukebox.bombs.@base.BombProp;
 
-[Library("bombs_tnt", Title = "TNT", Spawnable = true)]
+namespace Nukebox.bombs;
+
+[Spawnable]
+[Library("bombs_tnt", Title = "TNT")]
 public partial class TNT : BombProp, IUse
 {
 	int takenDamage;
@@ -33,16 +37,16 @@ public partial class TNT : BombProp, IUse
 		return true;
 	}
 
-    public bool OnUse(Entity user) 
-    {
-        if (user is Player player && takenDamage < 1)
-        {
-            takenDamage++;
-            PlaySound("rmine_blip3");
-        }
+	public bool OnUse(Entity user) 
+	{
+		if (user is Player player && takenDamage < 1)
+		{
+			takenDamage++;
+			PlaySound("rmine_blip3");
+		}
 
-        return false;
-    }
+		return false;
+	}
 
 	protected override void OnPhysicsCollision(CollisionEventData eventData)
 	{

@@ -2,7 +2,9 @@ using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
 using Sandbox.UI.Tests;
-using System.Linq;
+using BombProp = Nukebox.bombs.@base.BombProp;
+
+namespace Nukebox.ui.left;
 
 [Library]
 public partial class Bombs : Panel

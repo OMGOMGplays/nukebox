@@ -27,7 +27,7 @@ public partial class Weapon : BaseWeapon, IUse
 			EnableSelfCollisions = false
 		};
 
-		PickupTrigger.PhysicsBody.EnableAutoSleeping = false;
+		PickupTrigger.PhysicsBody.AutoSleep = false;
 	}
 
 	public override void ActiveStart( Entity ent )
@@ -45,7 +45,7 @@ public partial class Weapon : BaseWeapon, IUse
 		TimeSinceReload = 0;
 		IsReloading = true;
 
-		(Owner as AnimEntity)?.SetAnimBool( "b_reload", true );
+		(Owner as AnimatedEntity)?.SetAnimParameter( "b_reload", true );
 
 		StartReloadEffects();
 	}
@@ -74,7 +74,7 @@ public partial class Weapon : BaseWeapon, IUse
 	[ClientRpc]
 	public virtual void StartReloadEffects()
 	{
-		ViewModelEntity?.SetAnimBool( "reload", true );
+		ViewModelEntity?.SetAnimParameter( "reload", true );
 
 		// TODO - player third person model reload
 	}
@@ -111,9 +111,10 @@ public partial class Weapon : BaseWeapon, IUse
 
 	public virtual bool IsUsable( Entity user )
 	{
+		var player = user as Player;
 		if ( Owner != null ) return false;
 
-		if ( user.Inventory is Inventory inventory )
+		if ( player.Inventory is Inventory inventory )
 		{
 			return inventory.CanAdd( this );
 		}
@@ -123,7 +124,6 @@ public partial class Weapon : BaseWeapon, IUse
 
 	public void Remove()
 	{
-		PhysicsGroup?.Wake();
 		Delete();
 	}
 
@@ -134,13 +134,7 @@ public partial class Weapon : BaseWeapon, IUse
 
 		Particles.Create( "particles/pistol_muzzleflash.vpcf", EffectEntity, "muzzle" );
 
-		if ( IsLocalPawn )
-		{
-			_ = new Sandbox.ScreenShake.Perlin();
-		}
-
-		ViewModelEntity?.SetAnimBool( "fire", true );
-		CrosshairPanel?.CreateEvent( "fire" );
+		ViewModelEntity?.SetAnimParameter( "fire", true );
 	}
 
 	/// <summary>
@@ -168,7 +162,7 @@ public partial class Weapon : BaseWeapon, IUse
 			//
 			using ( Prediction.Off() )
 			{
-				var damageInfo = DamageInfo.FromBullet( tr.EndPos, forward * 100 * force, damage )
+				var damageInfo = DamageInfo.FromBullet( tr.EndPosition, forward * 100 * force, damage )
 					.UsingTraceResult( tr )
 					.WithAttacker( Owner )
 					.WithWeapon( this );
@@ -183,7 +177,7 @@ public partial class Weapon : BaseWeapon, IUse
 	/// </summary>
 	public virtual void ShootBullet( float spread, float force, float damage, float bulletSize )
 	{
-		ShootBullet( Owner.EyePos, Owner.EyeRot.Forward, spread, force, damage, bulletSize );
+		ShootBullet( Owner.EyePosition, Owner.EyeRotation.Forward, spread, force, damage, bulletSize );
 	}
 
 	/// <summary>
@@ -191,8 +185,8 @@ public partial class Weapon : BaseWeapon, IUse
 	/// </summary>
 	public virtual void ShootBullets( int numBullets, float spread, float force, float damage, float bulletSize )
 	{
-		var pos = Owner.EyePos;
-		var dir = Owner.EyeRot.Forward;
+		var pos = Owner.EyePosition;
+		var dir = Owner.EyeRotation.Forward;
 
 		for ( int i = 0; i < numBullets; i++ )
 		{

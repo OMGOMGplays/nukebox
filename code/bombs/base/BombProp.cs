@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Sandbox;
 
-namespace Sandbox
+namespace Nukebox.bombs.@base
 {
 	/// <summary>
 	/// A prop that physically simulates as a single rigid body. It can be constrained to other physics objects using hinges
@@ -11,11 +12,11 @@ namespace Sandbox
 	/// used as a prop_physics. Upon level load it will display a warning in the console and remove itself. Use a prop_dynamic instead.
 	/// </summary>
 	[Library( "prop_physics" )]
-	[Hammer.Model]
-	[Hammer.RenderFields]
+	[SandboxEditor.Model]
+	[SandboxEditor.RenderFields]
 	public partial class BombProp : BasePhysics
 	{
-		[ServerVar]
+		[ConVar.Server()]
 		public static bool debug_prop_explosion { get; set; } = false;
 
 		protected enum PropCollisionGroups
@@ -57,17 +58,17 @@ namespace Sandbox
 
 		private void SpawnParticles()
 		{
-			var model = GetModel();
+			var model = Model;
 			if ( model == null || model.IsError )
 				return;
 
-			var particleList = model.GetParticles();
+			var particleList = model.GetData<ModelParticle[]>();
 			if ( particleList == null || particleList.Length <= 0 )
 				return;
 
 			foreach ( var particleData in particleList )
 			{
-				Particles.Create( particleData.Name, this, particleData.AttachmentPoint );
+				Particles.Create(particleData.Name, this );
 			}
 		}
 
@@ -85,7 +86,7 @@ namespace Sandbox
 		{
 			Host.AssertServer();
 
-			var propInfo = model.GetPropData();
+			ModelPropData propInfo = model.GetData<ModelPropData>();
 			Health = propInfo.Health;
 
 			//
@@ -196,26 +197,26 @@ namespace Sandbox
 
 		private bool HasExplosionBehavior()
 		{
-			var model = GetModel();
+			var model = Model;
 			if ( model == null || model.IsError )
 				return false;
 
-			return model.HasExplosionBehavior();
+			return model.HasData<ModelExplosionBehavior>();
 		}
 
 		private void OnExplosion()
 		{
-			var model = GetModel();
+			var model = Model;
 			if ( model == null || model.IsError )
 				return;
 
 			if ( !PhysicsBody.IsValid() )
 				return;
 
-			if ( !model.HasExplosionBehavior() )
+			if ( HasExplosionBehavior() )
 				return;
 
-			var explosionBehavior = model.GetExplosionBehavior();
+			var explosionBehavior = model.GetData<ModelExplosionBehavior>();
 
 			if ( !string.IsNullOrWhiteSpace( explosionBehavior.Sound ) )
 			{
@@ -239,14 +240,18 @@ namespace Sandbox
 			if ( explosionBehavior.Radius > 0.0f )
 			{
 				var sourcePos = PhysicsBody.MassCenter;
-				var overlaps = Physics.GetEntitiesInSphere( sourcePos, explosionBehavior.Radius );
+				
+				Trace trace = Trace.Sphere(explosionBehavior.Radius, sourcePos, 0);
+				var overlaps = trace.EntitiesOnly().RunAll();
+				
+				//var overlaps = Physics.GetEntitiesInSphere( sourcePos, explosionBehavior.Radius );
 
 				if ( debug_prop_explosion )
-					DebugOverlay.Sphere( sourcePos, explosionBehavior.Radius, Color.Orange, true, 5 );
+					DebugOverlay.Sphere( sourcePos, explosionBehavior.Radius, Color.Orange, 5 );
 
 				foreach ( var overlap in overlaps )
 				{
-					if ( overlap is not ModelEntity ent || !ent.IsValid() )
+					if ( overlap.Entity is not ModelEntity ent || !ent.IsValid() )
 						continue;
 
 					if ( ent.LifeState != LifeState.Alive )
@@ -272,7 +277,7 @@ namespace Sandbox
 					if ( tr.Fraction < 0.95f )
 					{
 						if ( debug_prop_explosion )
-							DebugOverlay.Line( sourcePos, tr.EndPos, Color.Red, 5, true );
+							DebugOverlay.Line( sourcePos, tr.EndPosition, Color.Red, 5, true );
 
 						continue;
 					}
@@ -304,7 +309,7 @@ namespace Sandbox
 			if ( !this.IsValid() )
 				return;
 
-			Liquid?.Update();
+			//Liquid?.Update();
 		}
 	}
 }

@@ -1,17 +1,14 @@
-
-using Sandbox;
+﻿using Sandbox;
+using Sandbox.Tools;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
-using System;
-using System.Reflection.Metadata;
-using System.Threading.Tasks;
+
 
 [Library]
 public partial class SpawnMenu : Panel
 {
 	public static SpawnMenu Instance;
 	readonly Panel toollist;
-	readonly Panel shooterlist;
 
 	public SpawnMenu()
 	{
@@ -33,8 +30,8 @@ public partial class SpawnMenu : Panel
 				var ents = body.AddChild<EntityList>();
 				tabs.AddButtonActive( "Entities", ( b ) => ents.SetClass( "active", b ) );
 
-				var bombs = body.AddChild<Bombs>();
-				tabs.AddButtonActive("Bombs", (b) => bombs.SetClass("active", b));
+				var models = body.AddChild<CloudModelList>();
+				tabs.AddButtonActive( "s&works", ( b ) => models.SetClass( "active", b ) );
 			}
 		}
 
@@ -44,7 +41,6 @@ public partial class SpawnMenu : Panel
 			{
 				tabs.Add.Button( "Tools" ).AddClass( "active" );
 				tabs.Add.Button( "Utility" );
-			
 			}
 			var body = right.Add.Panel( "body" );
 			{
@@ -52,8 +48,7 @@ public partial class SpawnMenu : Panel
 				{
 					RebuildToolList();
 				}
-
-				body.Add.Panel("inspector");
+				body.Add.Panel( "inspector" );
 			}
 		}
 
@@ -63,17 +58,17 @@ public partial class SpawnMenu : Panel
 	{
 		toollist.DeleteChildren( true );
 
-		foreach ( var entry in Library.GetAllAttributes<Sandbox.Tools.BaseTool>() )
+		foreach ( var entry in TypeLibrary.GetDescriptions<BaseTool>() )
 		{
 			if ( entry.Title == "BaseTool" )
 				continue;
 
 			var button = toollist.Add.Button( entry.Title );
-			button.SetClass( "active", entry.Name == ConsoleSystem.GetValue( "tool_current" ) );
+			button.SetClass( "active", entry.ClassName == ConsoleSystem.GetValue( "tool_current" ) );
 
 			button.AddEventListener( "onclick", () =>
 			{
-				ConsoleSystem.Run( "tool_current", entry.Name );
+				ConsoleSystem.Run( "tool_current", entry.ClassName );
 				ConsoleSystem.Run( "inventory_current", "weapon_tool" );
 
 				foreach ( var child in toollist.Children )
@@ -87,6 +82,22 @@ public partial class SpawnMenu : Panel
 		base.Tick();
 
 		Parent.SetClass( "spawnmenuopen", Input.Down( InputButton.Menu ) );
+
+		UpdateActiveTool();
+	}
+
+	void UpdateActiveTool()
+	{
+		var toolCurrent = ConsoleSystem.GetValue( "tool_current" );
+		var tool = string.IsNullOrWhiteSpace( toolCurrent ) ? null : TypeLibrary.GetDescription<BaseTool>( toolCurrent );
+
+		foreach ( var child in toollist.Children )
+		{
+			if ( child is Button button )
+			{
+				child.SetClass( "active", tool != null && button.Text == tool.Title );
+			}
+		}
 	}
 
 	public override void OnHotloaded()
