@@ -1,5 +1,7 @@
 using Sandbox;
+using BombProp = Nukebox.bombs.@base.BombProp;
 
+namespace Nukebox.bombs;
 [Spawnable]
 [Library("bombs_sbomb", Title = "S&Bomb")]
 public partial class SBomb : BombProp, IUse

@@ -3,6 +3,7 @@ using Sandbox.UI;
 using Sandbox.UI.Construct;
 using Sandbox.UI.Tests;
 using System.Linq;
+using BombProp = Nukebox.bombs.@base.BombProp;
 
 [Library]
 public partial class BombList : Panel 
