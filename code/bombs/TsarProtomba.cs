@@ -1,7 +1,4 @@
 using Sandbox;
-using BombProp = Nukebox.bombs.@base.BombProp;
-
-namespace Nukebox.bombs;
 
 [Library("bombs_tsarprotomba", Title = "Tsar Protomba")]
 public partial class TsarProtomba : BombProp, IUse

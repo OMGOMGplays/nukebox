@@ -1,7 +1,4 @@
 using Sandbox;
-using BombProp = Nukebox.bombs.@base.BombProp;
-
-namespace Nukebox.bombs;
 
 [Spawnable]
 [Library("bombs_tsarbomba", Title = "Tsar Bomba")]

@@ -51,8 +51,12 @@
 						remaps = 
 						[
 							{
-								from = ""
-								to = "materials/darkgreen.vmat"
+								from = "material.001.vmat"
+								to = "materials/bombs/darkgreen.vmat"
+							},
+							{
+								from = "material.002.vmat"
+								to = "materials/bombs/darkgreen.vmat"
 							},
 						]
 						use_global_default = false
@@ -68,7 +72,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = ""
 						surface_prop = "bombs"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 20.556681
 						point0 = [ 1.12711, -15.736822, 0.325986 ]
 						point1 = [ -1.196815, 42.360825, 0.044543 ]
@@ -77,7 +84,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = ""
 						surface_prop = "bombs"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 7.340067
 						point0 = [ -0.690838, 42.952477, 0.325986 ]
 						point1 = [ -1.196815, 62.428177, 0.044543 ]
@@ -86,7 +96,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = ""
 						surface_prop = "bombs"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 13.426904
 						point0 = [ -0.690838, -40.916943, 0.325986 ]
 						point1 = [ -1.196815, -28.499502, 1.133938 ]
@@ -95,7 +108,10 @@
 						_class = "PhysicsShapeBox"
 						parent_bone = ""
 						surface_prop = "bombs"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						origin = [ -0.301435, -58.43845, 0.034447 ]
 						angles = [ 0.0, 0.0, 0.0 ]
 						dimensions = [ 19.534628, 17.810814, 18.909378 ]
@@ -177,5 +193,6 @@
 		model_archetype = ""
 		primary_associated_entity = ""
 		anim_graph_name = ""
+		base_model_name = ""
 	}
 }
