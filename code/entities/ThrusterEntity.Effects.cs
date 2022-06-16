@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox.entities;
+
 public partial class ThrusterEntity
 {
 	private Particles effects;

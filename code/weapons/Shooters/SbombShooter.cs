@@ -1,7 +1,6 @@
 ﻿using Sandbox;
-using Sandbox.Tools;
 
-namespace Nukebox.tools.Shooters
+namespace Nukebox.weapons.Shooters
 {
 	[Library( "shooter_sbombshooter", Title = "S&bomb Shooter", Description = "KEYS FOR EVERYONE!!!", Group = "fun" )]
 	public class SbombShooter : BaseTool

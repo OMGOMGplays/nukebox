@@ -1,6 +1,8 @@
-﻿using Sandbox;
+﻿using System.Linq;
+using Sandbox;
 using Sandbox.Component;
-using System.Linq;
+
+namespace Nukebox.tools;
 
 public partial class PhysGun
 {

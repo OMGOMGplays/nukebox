@@ -214,10 +214,13 @@ namespace Nukebox.bombs.@base
 				return;
 
 			if ( HasExplosionBehavior() )
-				return;
+			{
+				Log.Error("No Explosion Data Found!");
+				return;	
+			}
 
 			var explosionBehavior = model.GetData<ModelExplosionBehavior>();
-
+			Log.Info("Bomb Exploded");
 			if ( !string.IsNullOrWhiteSpace( explosionBehavior.Sound ) )
 			{
 				Sound.FromWorld( explosionBehavior.Sound, PhysicsBody.MassCenter );
@@ -253,6 +256,8 @@ namespace Nukebox.bombs.@base
 				{
 					if ( overlap.Entity is not ModelEntity ent || !ent.IsValid() )
 						continue;
+					
+					DebugOverlay.Text($"{overlap.Entity.Name} is in range", overlap.Entity.Position, 10);
 
 					if ( ent.LifeState != LifeState.Alive )
 						continue;

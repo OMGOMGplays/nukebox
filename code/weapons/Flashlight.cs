@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox.weapons;
+
 [Spawnable]
 [Library( "weapon_flashlight", Title = "Flashlight" )]
 partial class Flashlight : Weapon

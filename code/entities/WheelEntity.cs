@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox.entities;
+
 [Library( "ent_wheel" )]
 public partial class WheelEntity : Prop
 {

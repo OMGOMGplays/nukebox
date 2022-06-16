@@ -1,5 +1,7 @@
 ﻿
-namespace Sandbox.Tools
+using Sandbox;
+
+namespace Nukebox
 {
 	public class PreviewEntity : ModelEntity
 	{

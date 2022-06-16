@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox;
+
 partial class SandboxPlayer
 {
 	public bool IsUseDisabled()
@@ -29,10 +31,10 @@ partial class SandboxPlayer
 		if ( !IsValidUseEntity( ent ) )
 		{
 			tr = Trace.Ray( EyePosition, EyePosition + EyeRotation.Forward * (85 * Scale) )
-			.Radius( 2 )
-			.HitLayer( CollisionLayer.Debris )
-			.Ignore( this )
-			.Run();
+				.Radius( 2 )
+				.HitLayer( CollisionLayer.Debris )
+				.Ignore( this )
+				.Run();
 
 			// See if any of the parent entities are usable if we ain't.
 			ent = tr.Entity;

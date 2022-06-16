@@ -1,4 +1,6 @@
-﻿namespace Sandbox.Tools
+﻿using Sandbox;
+
+namespace Nukebox.tools
 {
 	[Library( "tool_thruster", Title = "Thruster", Description = "A rocket type thing that can push forwards and backward", Group = "construction" )]
 	public partial class ThrusterTool : BaseTool
@@ -19,7 +21,7 @@
 			if ( !base.IsPreviewTraceValid( tr ) )
 				return false;
 
-			if ( tr.Entity is ThrusterEntity )
+			if ( tr.Entity is entities.ThrusterEntity )
 				return false;
 
 			return true;
@@ -60,14 +62,14 @@
 
 				CreateHitEffects( tr.EndPosition );
 
-				if ( tr.Entity is ThrusterEntity )
+				if ( tr.Entity is entities.ThrusterEntity )
 				{
 					// TODO: Set properties
 
 					return;
 				}
 
-				var ent = new ThrusterEntity
+				var ent = new entities.ThrusterEntity
 				{
 					Position = tr.EndPosition,
 					Rotation = Rotation.LookAt( tr.Normal, dir ) * Rotation.From( new Angles( 90, 0, 0 ) ),

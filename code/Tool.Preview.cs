@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using Sandbox;
 
-namespace Sandbox.Tools
+namespace Nukebox
 {
 	public partial class BaseTool
 	{

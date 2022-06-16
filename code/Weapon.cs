@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox;
+
 public partial class Weapon : BaseWeapon, IUse
 {
 	public virtual float ReloadTime => 3.0f;

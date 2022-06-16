@@ -1,5 +1,6 @@
 ﻿using Sandbox;
-using Sandbox.Tools;
+
+namespace Nukebox;
 
 [Library( "weapon_tool", Title = "Toolgun" )]
 partial class Tool : Carriable
@@ -95,38 +96,35 @@ partial class Tool : Carriable
 	}
 }
 
-namespace Sandbox.Tools
+public partial class BaseTool : BaseNetworkable
 {
-	public partial class BaseTool : BaseNetworkable
+	public Tool Parent { get; set; }
+	public Player Owner { get; set; }
+
+	protected virtual float MaxTraceDistance => 10000.0f;
+
+	public virtual void Activate()
 	{
-		public Tool Parent { get; set; }
-		public Player Owner { get; set; }
+		CreatePreviews();
+	}
 
-		protected virtual float MaxTraceDistance => 10000.0f;
+	public virtual void Deactivate()
+	{
+		DeletePreviews();
+	}
 
-		public virtual void Activate()
-		{
-			CreatePreviews();
-		}
+	public virtual void Simulate()
+	{
 
-		public virtual void Deactivate()
-		{
-			DeletePreviews();
-		}
+	}
 
-		public virtual void Simulate()
-		{
+	public virtual void OnFrame()
+	{
+		UpdatePreviews();
+	}
 
-		}
-
-		public virtual void OnFrame()
-		{
-			UpdatePreviews();
-		}
-
-		public virtual void CreateHitEffects( Vector3 pos )
-		{
-			Parent?.CreateHitEffects( pos );
-		}
+	public virtual void CreateHitEffects( Vector3 pos )
+	{
+		Parent?.CreateHitEffects( pos );
 	}
 }

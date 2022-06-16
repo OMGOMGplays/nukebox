@@ -2,6 +2,8 @@
 using Sandbox.UI;
 using Sandbox.UI.Tests;
 
+namespace Nukebox.ui.left;
+
 [Library]
 public partial class SpawnList : Panel
 {

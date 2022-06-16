@@ -1,4 +1,7 @@
-﻿namespace Sandbox.Tools
+﻿using Nukebox.entities;
+using Sandbox;
+
+namespace Nukebox.tools
 {
 	[Library( "tool_light", Title = "Lights", Description = "A dynamic point light", Group = "construction" )]
 	public partial class LightTool : BaseTool

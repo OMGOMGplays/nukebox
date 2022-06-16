@@ -1,4 +1,8 @@
-﻿using Sandbox;
+﻿using Nukebox.tools;
+using Nukebox.weapons;
+using Sandbox;
+
+namespace Nukebox;
 
 partial class SandboxPlayer : Player
 {
@@ -48,12 +52,12 @@ partial class SandboxPlayer : Player
 
 		Clothing.DressEntity( this );
 
-		Inventory.Add( new PhysGun(), true );
+		Inventory.Add( new tools.PhysGun(), true );
 		Inventory.Add( new GravGun() );
 		Inventory.Add( new Tool() );
 		Inventory.Add( new Pistol() );
-		Inventory.Add( new Flashlight() );
-		Inventory.Add( new Fists() );
+		Inventory.Add( new weapons.Flashlight() );
+		Inventory.Add( new weapons.Fists() );
 
 		CameraMode = new FirstPersonCamera();
 

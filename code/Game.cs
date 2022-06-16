@@ -1,6 +1,8 @@
-﻿using Sandbox;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
+using Sandbox;
+
+namespace Nukebox;
 
 partial class SandboxGame : Game
 {

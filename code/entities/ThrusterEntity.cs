@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox.entities;
+
 [Library( "ent_thruster" )]
 public partial class ThrusterEntity : Prop, IUse
 {

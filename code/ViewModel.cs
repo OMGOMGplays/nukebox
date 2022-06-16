@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox;
+
 public class ViewModel : BaseViewModel
 {
 	protected float SwingInfluence => 0.05f;

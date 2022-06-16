@@ -1,4 +1,6 @@
-﻿namespace Sandbox.Tools
+﻿using Sandbox;
+
+namespace Nukebox.tools
 {
 	[Library( "tool_leafblower", Title = "Leaf Blower", Description = "Blow me", Group = "fun" )]
 	public partial class LeafBlowerTool : BaseTool

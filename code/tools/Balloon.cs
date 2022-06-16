@@ -1,4 +1,7 @@
-﻿namespace Sandbox.Tools
+﻿using Nukebox.entities;
+using Sandbox;
+
+namespace Nukebox.tools
 {
 	[Library( "tool_balloon", Title = "Balloons", Description = "Create Balloons!", Group = "construction" )]
 	public partial class BalloonTool : BaseTool

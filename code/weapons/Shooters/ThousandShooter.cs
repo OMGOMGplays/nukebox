@@ -1,7 +1,6 @@
 ﻿using Sandbox;
-using Sandbox.Tools;
 
-namespace Nukebox.tools.Shooters
+namespace Nukebox.weapons.Shooters
 {
 	[Library( "shooter_thousandshooter", Title = "1000lb Shooter", Description = "Shoot 1000lb bombs at rapids amount of speeds.", Group = "fun" )]
 	public class ThousandShooter : BaseTool

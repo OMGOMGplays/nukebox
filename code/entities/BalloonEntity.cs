@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox.entities;
+
 [Spawnable]
 [Library( "ent_balloon", Title = "Balloon" )]
 public partial class BalloonEntity : Prop

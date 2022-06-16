@@ -2,6 +2,7 @@
 using Sandbox.UI;
 using Sandbox.UI.Construct;
 
+namespace Nukebox.ui.killfeed;
 
 public partial class KillFeedEntry : Panel
 {

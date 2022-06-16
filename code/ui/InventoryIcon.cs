@@ -1,7 +1,8 @@
-﻿
-using Sandbox;
+﻿using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
+
+namespace Nukebox.ui;
 
 public class InventoryIcon : Panel
 {

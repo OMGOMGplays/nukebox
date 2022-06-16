@@ -2,6 +2,8 @@
 using Sandbox.UI;
 using Sandbox.UI.Construct;
 
+namespace Nukebox.ui;
+
 public class Health : Panel
 {
 	public Label Label;

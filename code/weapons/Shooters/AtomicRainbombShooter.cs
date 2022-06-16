@@ -1,7 +1,6 @@
 ﻿using Sandbox;
-using Sandbox.Tools;
 
-namespace Nukebox.tools.Shooters
+namespace Nukebox.weapons.Shooters
 {
 	[Library( "shooter_atomicrainbombshooter", Title = "Atomic Rainbomb Shooter", Description = "Shoot rainbows eveyrwhere!!!", Group = "fun" )]
 	public class AtomicRainbombShooter : BaseTool

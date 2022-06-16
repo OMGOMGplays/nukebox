@@ -1,5 +1,7 @@
-﻿using Sandbox;
-using System;
+﻿using System;
+using Sandbox;
+
+namespace Nukebox.entities.car;
 
 public class CarCamera : CameraMode
 {
@@ -154,12 +156,11 @@ public class CarCamera : CameraMode
 		var length = (speed - ShakeSpeedThreshold) / (ShakeMaxSpeed - ShakeSpeedThreshold);
 		length = length.Clamp( 0, ShakeMaxLength );
 
-		float x = Noise.Perlin( pos, 0, 0 ) * length;
-		float y = Noise.Perlin( pos, 5.0f, 0 ) * length;
+		float x = global::Noise.Perlin( pos, 0, 0 ) * length;
+		float y = global::Noise.Perlin( pos, 5.0f, 0 ) * length;
 
 		Position += Rotation.Right * x + Rotation.Up * y;
 		Rotation *= Rotation.FromAxis( Vector3.Up, x );
 		Rotation *= Rotation.FromAxis( Vector3.Right, y );
 	}
 }
-

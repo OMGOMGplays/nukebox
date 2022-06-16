@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox;
+
 public partial class Tool
 {
 	[ClientRpc]

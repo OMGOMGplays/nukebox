@@ -1,4 +1,6 @@
-﻿namespace Sandbox.Tools
+﻿using Sandbox;
+
+namespace Nukebox.tools
 {
 	[Library( "tool_weld", Title = "Weld", Description = "Weld stuff together", Group = "construction" )]
 	public partial class WeldTool : BaseTool

@@ -1,5 +1,7 @@
-﻿using Sandbox;
-using System.Linq;
+﻿using System.Linq;
+using Sandbox;
+
+namespace Nukebox.entities;
 
 [Spawnable]
 [Library( "directional_gravity", Title = "Directional Gravity" )]
@@ -23,7 +25,7 @@ public partial class DirectionalGravity : Prop
 	{
 		// Only allow one of these to be spawned at a time
 		foreach ( var ent in All.OfType<DirectionalGravity>()
-			.Where( x => x.IsValid() && x != this ) )
+			         .Where( x => x.IsValid() && x != this ) )
 		{
 			ent.Delete();
 		}

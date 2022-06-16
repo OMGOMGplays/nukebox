@@ -1,5 +1,7 @@
-﻿using Sandbox;
-using System;
+﻿using System;
+using Sandbox;
+
+namespace Nukebox.entities.car;
 
 [Spawnable]
 [Library( "ent_car", Title = "Car" )]

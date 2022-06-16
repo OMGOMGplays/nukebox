@@ -1,6 +1,8 @@
-﻿using Sandbox;
+﻿using System.Collections.Generic;
+using Sandbox;
 using Sandbox.UI;
-using System.Collections.Generic;
+
+namespace Nukebox.ui;
 
 public class InventoryBar : Panel
 {
@@ -57,7 +59,7 @@ public class InventoryBar : Panel
 		if ( inventory == null )
 			return;
 
-		if ( player.ActiveChild is PhysGun physgun && physgun.BeamActive )
+		if ( player.ActiveChild is tools.PhysGun physgun && physgun.BeamActive )
 		{
 			return;
 		}

@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox;
+
 partial class SandboxPlayer
 {
 	[ClientRpc]
@@ -44,7 +46,7 @@ partial class SandboxPlayer
 		}
 
 		if ( damageFlags.HasFlag( DamageFlags.Bullet ) ||
-			 damageFlags.HasFlag( DamageFlags.PhysicsImpact ) )
+		     damageFlags.HasFlag( DamageFlags.PhysicsImpact ) )
 		{
 			PhysicsBody body = bone > 0 ? ent.GetBonePhysicsBody( bone ) : null;
 

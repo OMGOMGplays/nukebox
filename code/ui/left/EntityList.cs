@@ -1,8 +1,10 @@
-﻿using Sandbox;
+﻿using System.Linq;
+using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
 using Sandbox.UI.Tests;
-using System.Linq;
+
+namespace Nukebox.ui.left;
 
 [Library]
 public partial class EntityList : Panel
@@ -29,9 +31,9 @@ public partial class EntityList : Panel
 		};
 
 		var ents = TypeLibrary.GetDescriptions<Entity>()
-									.Where( x => x.HasTag( "spawnable" ) )
-									.OrderBy( x => x.Title )
-									.ToArray();
+			.Where( x => x.HasTag( "spawnable" ) )
+			.OrderBy( x => x.Title )
+			.ToArray();
 
 		foreach ( var entry in ents )
 		{

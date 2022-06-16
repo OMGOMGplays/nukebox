@@ -1,4 +1,7 @@
-﻿namespace Sandbox.Tools
+﻿using Nukebox.entities;
+using Sandbox;
+
+namespace Nukebox.tools
 {
 	[Library( "tool_wheel", Title = "Wheel", Description = "A wheel that you can turn on and off (but actually can't yet)", Group = "construction" )]
 	public partial class WheelTool : BaseTool

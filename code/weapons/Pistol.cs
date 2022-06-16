@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox.weapons;
+
 [Spawnable]
 [Library( "weapon_pistol", Title = "Pistol" )]
 partial class Pistol : Weapon

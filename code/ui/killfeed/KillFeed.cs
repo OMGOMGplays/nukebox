@@ -1,4 +1,5 @@
-﻿using Sandbox;
+﻿using Nukebox.ui.killfeed;
+using Sandbox;
 using Sandbox.UI;
 
 public partial class KillFeed : Panel

@@ -1,7 +1,6 @@
 ﻿using Sandbox;
-using Sandbox.Tools;
 
-namespace Nukebox.tools.Shooters
+namespace Nukebox.weapons.Shooters
 {
 	[Library( "shooter_fatmanshooter", Title = "Fat Man Shooter", Description = "Shoot Fat Mans (Americans)", Group = "fun" )]
 	public class FatManShooter : BaseTool

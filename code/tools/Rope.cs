@@ -1,4 +1,6 @@
-﻿namespace Sandbox.Tools
+﻿using Sandbox;
+
+namespace Nukebox.tools
 {
 	[Library( "tool_rope", Title = "Rope", Description = "Join two things together with a rope", Group = "construction" )]
 	public partial class RopeTool : BaseTool

@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox.entities;
+
 [Spawnable]
 [Library( "ent_lamp", Title = "Lamp" )]
 public partial class LampEntity : SpotLightEntity, IUse

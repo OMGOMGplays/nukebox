@@ -1,6 +1,7 @@
 ﻿using System;
+using Sandbox;
 
-namespace Sandbox.Tools
+namespace Nukebox.tools
 {
 	[Library( "tool_resizer", Title = "Resizer", Description = "Change the scale of things", Group = "construction" )]
 	public partial class ResizerTool : BaseTool

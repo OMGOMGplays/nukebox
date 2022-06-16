@@ -1,7 +1,6 @@
 ﻿using Sandbox;
-using Sandbox.Tools;
 
-namespace Nukebox.tools.Shooters
+namespace Nukebox.weapons.Shooters
 {
 	[Library( "shooter_atombombshooter", Title = "Atom Bomb Shooter", Description = "Shoot Atom Bombs, because fuck you and everyone within a 1000 meter radius", Group = "fun" )]
 	public class AtomBombShooter : BaseTool

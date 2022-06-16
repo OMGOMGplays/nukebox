@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Sandbox;
 
-namespace Sandbox.Tools
+namespace Nukebox.tools
 {
 	[Library( "tool_color", Title = "Color", Description = "Change render color and alpha of entities", Group = "construction" )]
 	public partial class ColorTool : BaseTool

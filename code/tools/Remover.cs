@@ -1,4 +1,6 @@
-﻿namespace Sandbox.Tools
+﻿using Sandbox;
+
+namespace Nukebox.tools
 {
 	[Library( "tool_remover", Title = "Remover", Description = "Remove entities", Group = "construction" )]
 	public partial class RemoverTool : BaseTool

@@ -1,6 +1,8 @@
-﻿using Sandbox;
-using System;
+﻿using System;
 using System.Linq;
+using Sandbox;
+
+namespace Nukebox.tools;
 
 [Library( "gravgun" )]
 public partial class GravGun : Carriable

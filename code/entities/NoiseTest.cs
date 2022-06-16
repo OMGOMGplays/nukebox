@@ -1,5 +1,7 @@
 ﻿using Sandbox;
 
+namespace Nukebox.entities;
+
 [Spawnable]
 [Library( "noise_test", Title = "Noise Test" )]
 public partial class NoiseTest : Prop
@@ -64,41 +66,41 @@ public partial class NoiseTest : Prop
 		pos -= forward * size * 0.5f;
 
 		for ( float x = 0; x < size; x++ )
-			for ( float y = 0; y < size; y++ )
+		for ( float y = 0; y < size; y++ )
+		{
+			float val = 0;
+
+			switch ( mode )
 			{
-				float val = 0;
-
-				switch ( mode )
-				{
-					case 0:
-						{
-							val = Noise.Perlin( x * 0.1f + offset, y * 0.1f, offsetz ) * 0.5f;
-							break;
-						}
-					case 1:
-						{
-							val = Noise.SparseConvolution( x * 0.1f + offset, y * 0.1f, offsetz ) * 0.5f;
-							break;
-						}
-					case 2:
-						{
-							val = Noise.SparseConvolutionNormalized( x * 0.1f + offset, y * 0.1f, offsetz ) * 0.5f;
-							break;
-						}
-					case 3:
-						{
-							val = Noise.Turbulence( 2, x * 0.1f + offset, y * 0.1f, offsetz ) * 0.5f;
-							break;
-						}
-					case 4:
-						{
-							val = Noise.Fractal( 2, x * 0.1f + offset, y * 0.1f, offsetz ) * 0.5f;
-							break;
-						}
-				}
-
-				var start = pos + x * right + y * forward;
-				DebugOverlay.Line( start, start + up * val, Color.Lerp( Color.Red, Color.Green, (val + 1.0f) / 2.0f ) );
+				case 0:
+					{
+						val = global::Noise.Perlin( x * 0.1f + offset, y * 0.1f, offsetz ) * 0.5f;
+						break;
+					}
+				case 1:
+					{
+						val = global::Noise.SparseConvolution( x * 0.1f + offset, y * 0.1f, offsetz ) * 0.5f;
+						break;
+					}
+				case 2:
+					{
+						val = global::Noise.SparseConvolutionNormalized( x * 0.1f + offset, y * 0.1f, offsetz ) * 0.5f;
+						break;
+					}
+				case 3:
+					{
+						val = global::Noise.Turbulence( 2, x * 0.1f + offset, y * 0.1f, offsetz ) * 0.5f;
+						break;
+					}
+				case 4:
+					{
+						val = global::Noise.Fractal( 2, x * 0.1f + offset, y * 0.1f, offsetz ) * 0.5f;
+						break;
+					}
 			}
+
+			var start = pos + x * right + y * forward;
+			DebugOverlay.Line( start, start + up * val, Color.Lerp( Color.Red, Color.Green, (val + 1.0f) / 2.0f ) );
+		}
 	}
 }

@@ -1,6 +1,8 @@
-using Sandbox;
 using System;
 using System.Linq;
+using Sandbox;
+
+namespace Nukebox.tools;
 
 [Library( "physgun" )]
 public partial class PhysGun : Carriable

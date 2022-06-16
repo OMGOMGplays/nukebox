@@ -1,5 +1,7 @@
-﻿using Sandbox;
-using System;
+﻿using System;
+using Sandbox;
+
+namespace Nukebox.entities.car;
 
 struct CarWheel
 {
