@@ -1,0 +1,27 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "1000lb Bomb",
+      "Type": "model",
+      "Org": "nukebox",
+      "Ident": "thousand_bomb",
+      "Tags": null,
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "Resources": null,
+      "MenuResources": null,
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "models/bombs/thousandlbbomb.vmdl",
+        "Summary": "",
+        "Description": "",
+        "Public": true
+      }
+    }
+  }
+}

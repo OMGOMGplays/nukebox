@@ -1,0 +1,28 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "S\u0026Bomb",
+      "Type": "model",
+      "Org": "nukebox",
+      "Ident": "sbomb_bomb",
+      "Tags": "nuke",
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "Resources": null,
+      "MenuResources": null,
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "models/bombs/sbomb.vmdl",
+        "Summary": "",
+        "Description": "",
+        "Public": true,
+        "ReplaceTags": "bomb"
+      }
+    }
+  }
+}

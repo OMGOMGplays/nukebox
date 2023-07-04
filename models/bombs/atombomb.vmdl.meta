@@ -1,0 +1,27 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Atom Bomb",
+      "Type": "model",
+      "Org": "nukebox",
+      "Ident": "atom_bomb",
+      "Tags": null,
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "Resources": null,
+      "MenuResources": null,
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "models/bombs/atombomb.vmdl",
+        "Summary": "",
+        "Description": "",
+        "Public": true
+      }
+    }
+  }
+}
